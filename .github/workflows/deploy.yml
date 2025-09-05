@@ -1,4 +1,4 @@
-name: Deploy to Vercel
+name: Build and Deploy
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main, master ]
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
